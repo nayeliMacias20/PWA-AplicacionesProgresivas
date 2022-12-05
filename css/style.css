@@ -1,0 +1,255 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.clearfix{
+    clear: both;
+    float:none;
+}
+.contenedor{
+    width: 85%;
+    margin: 0px auto;
+    background-color: rgba(250, 255, 253, 0);
+}
+   
+#encabezado{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100% ;
+    padding: 15px;
+}
+body{
+    background-color: rgba(158, 221, 192, 0.712);
+}
+#logo{
+    width:60%;
+    float:left;
+}
+#logo h1{
+    color:rgb(12, 11, 11);
+    font-size: 40px;
+    font-weight: 200;
+}
+#menu{
+    width: 350px;
+    float: right;
+}
+#menu ul li{
+    list-style: none;
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 15px;
+    text-align: center;
+}
+#menu ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+}
+#menu ul li a:hover{
+    color: rgb(12, 11, 11);
+    font-size: 25px;
+}
+#slide{
+    margin-top: 15px;
+    background-color: rgb(7, 2, 39);
+    height: 200px;
+    width: 105%;
+}
+#slide h1{
+    font-size: 20px;
+    color:white;
+    font-weight: 400;
+    text-align: center;
+    line-height: 200px;   
+}
+.subheader{
+    height: 150px;
+    border-bottom: 2px solid rgba(5, 1, 24, 0.714);
+    text-align: center;
+}
+.subheader h2{
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 120px;
+    color: rgb(15, 10, 10);
+}
+.servicios{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.formaServicios{
+    width: 30%;
+    height: 400px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    float: left;    
+    background-color: rgba(255, 255, 255, 0.404);  
+    text-align: center; 
+    box-shadow: 5px 10px rgba(14, 13, 13, 0.863);
+}
+.formaServicios img{
+    width: 100px;
+    height: 150px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.formaServicios h2{
+    margin-bottom: 15px; 
+    color:rgb(0, 0, 0);  
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.formaServicios p{
+    color:#444;
+}
+.forma{
+    width: 30%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    float: left;    
+    background-color: rgba(255, 255, 255, 0.404);  
+    text-align: center; 
+    box-shadow: 5px 10px rgba(14, 13, 13, 0.863);
+}
+.forma h2{
+    margin-bottom: 15px; 
+    font-size: 15px; 
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);  
+}
+.forma p{
+    color:#444;
+}
+#pie{
+    background-color:  rgb(7, 2, 39);
+    padding-top: 5px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+    color:white;
+}
+#pie .subheader{
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#pie ul{
+    margin: 0px auto;
+    width: 220px;
+    display: block;
+    list-style: none;
+    margin-bottom: 20px
+}
+#pie li{
+    float:left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#pie .subheader h2{
+    color:white;   
+}
+#pie p{
+    margin-top: 5px;
+}
+#pie li:hover{
+    opacity: 0.8;
+    transform: scale(1.2,1.2);
+}
+/*Logo*/
+@media only screen and (max-width: 375px) {
+    #logo h1{
+        font-size: 15px;
+    }
+}
+/*Menú*/
+  @media only screen and (max-width: 375px) {
+    #menu ul li a{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 18px;
+        margin-left: 18px;
+        text-align: center;
+    }
+}
+/*Slide h1 Aplicaciones web progresivas*/
+@media only screen and (max-width: 375px) {
+    #slide{
+        height: 150px;
+        width: 100%;
+    }
+    #slide h1{
+        font-size: 20px;
+        font-weight: 350px;
+        line-height: 150px;   
+    }
+}
+/*Servicios*/
+@media only screen and (max-width: 375px) {
+    .subheader{
+        height: 80px;
+        margin-top: 15px;
+    }
+    .subheader h2{
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 90px;
+    }
+}
+/*Imagenes*/
+@media only screen and (max-width: 375px) {
+    .formaServicios{
+        width: 30%;
+        height: 300px;
+        padding: 0px;
+        margin: 3px;
+        border-radius: 8px;
+    }
+    .formaServicios img{
+        width: 80px;
+        height: 90px;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    .formaServicios h2{
+        margin-bottom: 10px;   
+        font-size: 15px;
+    }
+    .formaServicios p{
+        color:#444;
+        font-size: 15px;
+    }
+}
+/*Videos*/
+@media only screen and (max-width: 375px) {
+    .forma{
+        width: 30%;
+        height: 500px;
+        padding: 0px;
+        margin: 3px;
+        margin-top: 15px;
+        border-radius: 8px;
+    }
+    .forma h2{
+        margin-bottom: 10px;   
+        font-size: 15px;
+    }
+}
+/*Pie de página*/
+@media only screen and (max-width: 375px) {
+    #pie{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 80px
+    }
+}
+
