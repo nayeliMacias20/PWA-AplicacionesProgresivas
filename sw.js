@@ -3,6 +3,7 @@ self.addEventListener('install', e=>{
     .then(cache =>{
          //Dentro de cache add all le ingresaremos un vector
         cache.addAll([
+            './',
             'index.html',
             'css/style.css',
             'images/Apple1.jpg',
